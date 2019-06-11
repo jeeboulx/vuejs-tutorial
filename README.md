@@ -17,9 +17,11 @@ No VisualStudio Code, abra o projeto na pasta **webpack**.
 
 ### Instalação do debugger
 - vue-cli (v3)
+
 No marketplace, busque a extensão *Debugger for Chrome*. Após a instalação, na barra lateral, irá aparecer a opção de debug.
 Ao clicar no ícone de play, automaticamente será criado a pasta `.vscode` e já abrirá o navegador em modo debug.
-`
+
+```
 {
     "version": "0.2.0",
     "configurations": [
@@ -32,11 +34,13 @@ Ao clicar no ícone de play, automaticamente será criado a pasta `.vscode` e j�
         }
     ]
 }
-`
+```
 - Versões anteriores
+
 Na versão anterior do vue-cli, seria necessário a configuração adicional, conforme apresentado abaixo:
+
 -- launch.json
-`
+```
 {
     "version": "0.2.0",
     "configurations": [
@@ -53,7 +57,7 @@ Na versão anterior do vue-cli, seria necessário a configuração adicional, co
         }
     ]
 }
-`
+```
 
 -- config/index.js
 Substituir a entrada `devtool: 'cheap-module-eval-source-map'` por `devtool: 'source-map'`.
