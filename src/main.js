@@ -16,7 +16,6 @@ const launchMiddleware = require('launch-editor-middleware');
 Vue.config.productionTip = false;
 // Before you create app
 Vue.config.devtools = process.env.NODE_ENV === 'development';
-
 new Vue({
   router,
   store,

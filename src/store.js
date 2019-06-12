@@ -8,7 +8,7 @@ export default new Vuex.Store({
     produtos: [
       {
         id: 1,
-        descricao: 'ALFACE LISA 2',
+        descricao: 'ALFACE LISA',
       },
       {
         id: 2,
@@ -36,8 +36,5 @@ export default new Vuex.Store({
         }
       }
     },
-  },
-  actions: {
-
   },
 });
