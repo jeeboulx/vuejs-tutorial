@@ -3,6 +3,8 @@ import Router from 'vue-router';
 import Home from './views/Home.vue';
 import TutorialCrudPage from './views/TutorialCrudPage.vue';
 import CadastroProduto from './views/CadastroProduto.vue';
+import CadastroProdutoDojo from './views/CadastroProdutoDojo.vue';
+import PesquisaProdutoDojo from './views/PesquisaProdutoDojo.vue';
 
 Vue.use(Router);
 
@@ -39,5 +41,16 @@ export default new Router({
       name: 'cadastro',
       component: CadastroProduto,
     },
+    {
+      path: '/dojo',
+      name: 'dojo',
+      component: CadastroProdutoDojo,
+    },
+    {
+      path: '/pesquisa',
+      name: 'pesquisa',
+      component: PesquisaProdutoDojo,
+    },
+
   ],
 });

@@ -23,6 +23,7 @@ export default new Vuex.Store({
         descricao: 'ALFACE PELUDONA',
       },
     ],
+    produtosDojo: [],
   },
   mutations: {
     salvarProduto(state, produto) {
@@ -35,6 +36,9 @@ export default new Vuex.Store({
           state.produtos.splice(i, 1);
         }
       }
+    },
+    gravarProdutosDojo(state, produtoDojo) {
+      state.produtosDojo.push(produtoDojo);
     },
   },
 });
